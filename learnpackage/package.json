@@ -1,0 +1,24 @@
+{
+  "name": "reactpackage",
+  "version": "1.0.0",
+  "description": "this is about learn package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "js",
+    "nareshit"
+  ],
+  "author": "NareshIt",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.12.0",
+    "zone.js": "^0.10.2"
+  },
+  "devDependencies": {
+    "redux": "^4.0.5"
+  }
+}

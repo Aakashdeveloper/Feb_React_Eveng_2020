@@ -1,0 +1,116 @@
+JavaScript -3
+---------------
+React => 3 Application
+React+Redux = 2 Application
+React+GraphQl => 1 Application
+ReactHooks => 1 Application
+Basic(React native)
+>React thunk/react Saga
+---------------------
+Testing 
+---------------
+Production
+> MERN
+> Docker 
+> Nginx
+-----------------------
+Github
+------------------------
+25-30
+
+
+> Basic Html/ Css
+> JavaScript
+
+
+https://code.visualstudio.com/ 
+https://github.com/ 
+https://nodejs.org/en/ 
+
+----------------------------
+JavaScript
+
+SPA> single page application
+
+
+>>>>>>>>><<<<<<<<<<
+NodeJs (npm> node package manger)
+
+package.json
+> starting file
+> contains command to start test build
+> contains information of Application
+> help to manage packges
+
+JSON => JavaScript Object Notation
+Datatype(way to represent data)
+
+[
+    {
+        "name":"john",
+        "class":"react"
+    },
+    {
+        "name":"abc",
+        "class":"xyz",
+        "phone":87658
+    }
+]
+
+//////Create package.json/////
+**NodeJs must be installed
+
+> Navigate to the folder using cmd
+> npm init 
+> Answer all questions
+> type 'yes'
+
+
+
+>>>>>>><<<<<<
+Local Packages (local to the folder)
+    > Prod dependency
+    > Dev dependency
+
+Global Packages ( Global to the system)
+(build generate run)
+
+
+>>>>>>>
+Install Local dependency
+<<<<<<
+
+> Navigate to the folder using cmd
+> npm install <package name>/npm i <package name>/ npm install <package name> --save
+>npm install <package name>
+> npm i redux --save-dev
+
+
+>>>>>>Global package<<<<
+#Window
+>  Run cmd as Admin
+>  npm i -g create-react-app
+
+#Mac/Linux
+> open your terminal
+> sudo npm i -g create-react-app
+
+
+>>>>>>Setup React App<<<<<<<
+#Window
+>  Run cmd as Admin
+>  npm i -g create-react-app
+-----
+>  Navigate to the folder using cmd
+>  create-react-app myapp
+>  cd myapp
+>  npm start
+
+#Mac/Linux
+>  open your terminal
+>  sudo npm i -g create-react-app
+-----
+>  Navigate to the folder using cmd
+>  create-react-app myapp
+>  cd myapp
+>  npm start
