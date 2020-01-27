@@ -114,3 +114,22 @@ Install Local dependency
 >  create-react-app myapp
 >  cd myapp
 >  npm start
+
+| Hooks Component
+
+
+Functional       |   ClassBase  
+Dumb/Display     |   Logical
+Light in weight  |   Heavy as compare to Functional
+Cannot Maintain  |   They can Maintain state
+State
+
+
+> Any Data interaction will happen only through state
+
+State & Props
+
+State is local variable
+
+ComponentA    ===>         Component B
+State1        Props          State2
