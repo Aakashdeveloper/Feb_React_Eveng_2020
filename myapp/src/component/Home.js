@@ -13,11 +13,11 @@ class Home extends Component {
         }
     }
     render(){
-        console.log(JSON);
+        //console.log(JSON);
         return(
             <React.Fragment>
                 <Header/>
-                <NewsList/>
+                <NewsList newsdata={this.state.news}/>
             </React.Fragment>
         )  
     }

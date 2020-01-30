@@ -7,16 +7,25 @@ class Header extends Component {
         super(props)
 
         this.state={
-            title:'React App'
+            title:'React App',
+            userinput:'User Text here'
         }
+    }
+
+    inputCapture(event){
+        console.log(event.target.value)
+        this.setState({userinput:event.target.value?event.target.value:"User Text Here"})
     }
 
     render(){
         return(
             <header>
-                <div className="logo">{this.state.title}</div>
+                <div className="logo"
+                onClick={()=>{console.log('clicked button')}}
+                >{this.state.title}</div>
                 <center>
-                    <input/>
+                    <input onChange={this.inputCapture.bind(this)}/>
+                    <p>{this.state.userinput}</p>
                 </center>
                 <hr/>
             </header>
