@@ -164,3 +164,26 @@ person.fullName.call(john,['London','England'])
 "john Doe London,England undefined"
 person.fullName.apply(john,['London','England'])
 "john Doe London England"
+
+const book = {title: 'Brave New World',author: 'Aldous Huxley'}
+
+function summary(){
+    console.log(`${this.title} was written by ${this.author}.`)}
+    
+summary.call(book);
+
+
+const book2 = {title: 'Brave New World',author: 'Aldous Huxley'}
+
+function summary2() {
+    console.log(book2.title+' was written by'+ book2.author);}
+}
+summary2()
+
+
+
+var a = 10
+
+function add(){
+    return a+a
+}

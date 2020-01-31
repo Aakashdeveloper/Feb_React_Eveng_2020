@@ -137,3 +137,11 @@ State1        Props          State2
 
 <a href=""></a>
 <img src=""></a>
+
+
+parent => child (props)
+child => parent(callbacks)
+
+
+///For Routing////
+npm i react-router-dom

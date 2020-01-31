@@ -15,13 +15,18 @@ class Header extends Component {
     inputCapture(event){
         console.log(event.target.value)
         this.setState({userinput:event.target.value?event.target.value:"User Text Here"})
+        this.props.userText(event.target.value)
+    }
+
+    buttonClick(event){
+        console.log('hhiiiii')
     }
 
     render(){
         return(
             <header>
                 <div className="logo"
-                onClick={()=>{console.log('clicked button')}}
+                onClick={()=>{console.log('hhiiiii')}}
                 >{this.state.title}</div>
                 <center>
                     <input onChange={this.inputCapture.bind(this)}/>
@@ -52,4 +57,14 @@ const Header = () => {
     )
 }
 
-export default Header;*/
+export default Header;
+
+var a = 1
+var b = 2
+function add(){
+    return a+b
+}
+
+add(3,4)
+
+*/
