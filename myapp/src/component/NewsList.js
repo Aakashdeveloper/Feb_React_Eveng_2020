@@ -1,7 +1,7 @@
 import React from 'react';
 
 const NewsList = (props) => {
-    //console.log("<<<<In NewsList>>>>",props)
+    console.log("<<<<In NewsList>>>>",props)
 
     const renderlist = props.newsdata.map((item) => {
         return(

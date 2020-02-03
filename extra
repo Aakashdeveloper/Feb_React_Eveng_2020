@@ -145,3 +145,10 @@ child => parent(callbacks)
 
 ///For Routing////
 npm i react-router-dom
+
+
+////Mock API/////
+npm i -g json-server
+json-server --watch db.json --port 8900
+
+
