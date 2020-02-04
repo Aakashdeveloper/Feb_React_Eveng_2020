@@ -152,3 +152,15 @@ npm i -g json-server
 json-server --watch db.json --port 8900
 
 
+const abc = () => {
+    console.log('aaa')
+}
+
+
+
+const o = {p: 42, q: true};
+const {p: foo, q: bar} = o;
+var foo = 44
+ 
+console.log(foo); // 42 
+console.log(bar); // true
