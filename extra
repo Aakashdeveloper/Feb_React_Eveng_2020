@@ -164,3 +164,13 @@ var foo = 44
  
 console.log(foo); // 42 
 console.log(bar); // true
+
+
+var a = 10
+var b = "my age is "+a
+`my age is ${b}`
+
+<div>
+    <h1></h1>
+    <h2></h2>
+</div>
