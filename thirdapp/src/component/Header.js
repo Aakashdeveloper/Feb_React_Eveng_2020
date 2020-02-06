@@ -7,6 +7,9 @@ const Header = () => {
             <Link to="/">
                 Home Page
             </Link>
+            <Link to="/form">
+                Forms
+            </Link>
         </header>
     )
 }
