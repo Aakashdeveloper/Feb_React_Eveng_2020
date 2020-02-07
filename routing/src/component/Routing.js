@@ -5,6 +5,7 @@ import Home from './Home';
 import Profile from './Profile';
 import Post from './Posts';
 import PostDetails from './PostDetails';
+import Hooks from './hooksComponent';
 
 const Routing = () => {
     return(
@@ -26,6 +27,7 @@ const Routing = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/post">Post</Link></li>
                         <li><Link to="/profile">Profile</Link></li>
+                        <li><Link to="/hooks">Hooks</Link></li>
                     </ul>
                     </div>
                 </div>
@@ -35,6 +37,7 @@ const Routing = () => {
             <Route exact path="/post" component={Post}></Route>
             <Route exact path="/post/:topic" component={PostDetails}></Route>
             <Route exact path="/profile" component={Profile}></Route>
+            <Route exact path="/hooks" component={Hooks}></Route>
         </div>
     </BrowserRouter>
     )
