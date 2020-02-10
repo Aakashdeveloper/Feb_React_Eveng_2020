@@ -202,3 +202,29 @@ UserRole
 
 localstorgae ={"tokeen","role"}
 cookies
+
+
+function Counter({initialCount}) {
+     const [count, setCount] = useState(initialCount);
+      return (<>Count: {count}       <button onClick={() => setCount(initialCount)}>Reset</button>       <button onClick={() => setCount(prevCount => prevCount - 1)}>-</button>       <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>     </>   ); }  https://reactjs.org/docs/hooks-state.html  import React, { useState } from 'react';  function Example() {   // Declare a new state variable, which we'll call "count"   const [count, setCount] = useState(0);    return (     <div>       <p>You clicked {count} times</p>       <button onClick={() => setCount(count + 1)}>         Click me       </button>     </div>   ); } https://reactjs.org/docs/hooks-reference.html  useEffect Cleaning up an effect Conditionally firing an effect 
+
+
+       <button onClick={() => setCount((prevCount) => {prevCount - 1})}>-</button>
+      <button onClick={() => setCount((prevCount) => {prevCount + 1})}>+</button>
+
+
+      var count = (a) => { a-1 }
+      count(20)
+
+      function Example() {
+          // Declare a new state variable, which we'll call "count"   
+          const [count, setCount] = useState(0);
+          return (
+              <div>
+              <p>You clicked {count} times</p>
+              <button onClick={() => setCount(count + 1)}>Click me</button>
+                </div>  );
+            }
+
+
+//Pure component

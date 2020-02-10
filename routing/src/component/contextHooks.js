@@ -6,8 +6,7 @@ class MyProvider extends Component {
     state={
         city:'London'
     }
-
-
+    
     render(){
         return(
             <MyContext.Provider value={{
@@ -19,6 +18,11 @@ class MyProvider extends Component {
     }
 }
 
+/*
+<div>
+    <p passdata></p>
+</div>
+*/
 
 class City extends Component{
 
@@ -49,12 +53,16 @@ class City1 extends Component{
     }
 }
 
-const Country = (props) => {
+const Country = () => {
     return(
         <div className="country">
-           <City/> 
-           <City1/>
+           <span>This is my nested child 1</span><City/> 
+
+           <p>This is my nested child 2</p><City1/>
+           <p>Hi p1 </p><p>Hi p2 </p>
+           <span>Hi p1 </span><span>Hi p2 </span>
         </div>
+
     )
 }
 

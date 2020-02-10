@@ -16,7 +16,7 @@ function Hooks(){
                 const myres = res.data
                 setArtist(myres)
             })
-    });
+    },[artist]);
 
 
 
