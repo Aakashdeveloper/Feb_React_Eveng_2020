@@ -20,3 +20,32 @@ export function articleNews(){
         payload:output
     }
 }
+
+export function galleryNews(){
+    const output = fetch(`${url}/galleries?_limit=2`, {method:'GET'})
+    .then((data) => data.json())
+
+    return{
+        type:'GET_GALLERY',
+        payload:output
+    }
+}
+
+
+export function selectedNews(id){
+    const output = fetch(`${url}/articles?id=${id}`, {method:'GET'})
+    .then((data) => data.json())
+
+    return{
+        type:'GET_SELECTED_NEWS',
+        payload:output
+    }
+}
+
+export function clearselectedNews(){
+
+    return{
+        type:'CLEAR_SELECTED_NEWS',
+        payload:[]
+    }
+}
