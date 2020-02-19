@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { selectedNews, clearselectedNews} from '../actions'
+import LikeCounter from './LikeCounter'
 
 class NewsDetails extends Component {
 
@@ -37,6 +38,14 @@ class NewsDetails extends Component {
                             <img src={`/images/articles/${data.img}`}/>
                             <div className="body_news">
                                 {data.body}
+                            </div>
+                            <div>
+
+                                <LikeCounter
+                                articleId={data.id}
+                                likes={data.likes[0]}
+                                dislikes={data.likes[1]}
+                                />
                             </div>
                         </div>
                     </div>
