@@ -2,8 +2,8 @@ JavaScript -3
 ---------------
 React => 3 Application
 React+Redux = 2 Application
-React+GraphQl => 1 Application
 ReactHooks => 1 Application
+React+GraphQl => 1 Application
 Basic(React native)
 >React thunk/react Saga
 ---------------------
@@ -234,3 +234,8 @@ function Counter({initialCount}) {
 Redux
 Flux=-
 Relay=-RGR
+
+
+///
+Application build
+> npm run build

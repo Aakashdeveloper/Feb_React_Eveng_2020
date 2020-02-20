@@ -66,3 +66,39 @@ export function handleLikes(array,id){
         payload: output
     }
 }
+
+
+export function PostData(title,body,category){
+    var random = Math.floor(Math.random()*1000);
+    var data = {
+            "id": random,
+            "title":title,
+            "body": body,
+            "category": category,
+            "img": "10.jpg",
+            "date": "21/21/1944",
+            "author": "Aston Kutcher",
+            "views": 678,
+            "likes": [
+              361,
+              103
+            ]  
+        }
+    
+        fetch(`${url}/articles/`,{
+            method:'POST',
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+
+        .then((response) => response.json())
+
+
+        return{
+            type:'POST_FORMS',
+            payload:''
+        }
+}
