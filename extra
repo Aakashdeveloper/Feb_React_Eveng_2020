@@ -239,3 +239,9 @@ Relay=-RGR
 ///
 Application build
 > npm run build
+
+
+/*
+npm i -g create-react-native-app
+create-react-native-app mynative
+*/
