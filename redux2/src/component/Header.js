@@ -5,13 +5,7 @@ const Header = () => {
     return(
         <header>
             <div>
-                <Link to="/">
-                    <h1>Redux App</h1>
-                </Link>
-                &nbsp;
-                <Link to="/forms">
-                    <h1>Forms</h1>
-                </Link>
+               <h1>My Headeer</h1>
             </div>
         </header>
     )

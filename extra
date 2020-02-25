@@ -4,8 +4,8 @@ React => 3 Application
 React+Redux = 2 Application
 ReactHooks => 1 Application
 React+GraphQl => 1 Application
+React thunk/react Saga
 Basic(React native)
->React thunk/react Saga
 ---------------------
 Testing 
 ---------------
@@ -245,3 +245,26 @@ Application build
 npm i -g create-react-native-app
 create-react-native-app mynative
 */
+
+
+function loop(data){
+    for(i=0;i<data;i++){
+        console.log(i)
+    }
+}
+
+function* loop(data){
+    for(i=0;i<data;i++){
+        yield i
+    }
+}
+function* loop(data){
+    for(i=0;i<data;i++){
+        yield i
+    }
+}
+
+var out = loop(10)
+out.next()
+{value: 0, done: false}
+out.next()
